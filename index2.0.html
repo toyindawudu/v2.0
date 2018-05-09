@@ -4,6 +4,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="css/style2.0.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <title>Toyin Dawudu | Front-end Developer & Creative</title>
     <title></title>
@@ -14,9 +15,9 @@
 
     <main id="landingpage">
       <section class="info animation-box">
-        <h1 class="info-1 fadeIn">I'm Toyin Dawudu.</h1>
-        <h3 class="info-1 fadeIn">A Front-end Developer</h3>
-        <p class="info-2 fadeIn">a passionately problem-solving mind focused on providing solutions.</p><br>
+        <h1 class="info-1 animated bounceInDown">I'm Toyin Dawudu.</h1>
+        <h3 class="info-1 animated bounceInDown">A Front-end Developer</h3>
+        <p class="info-2 animated bounceInDown">a passionately problem-solving mind focused on providing solutions.</p><br>
         <button class="button"><span>View Projects</span></button>
     </section>
     </main>
@@ -65,18 +66,45 @@
 
 <!--  PROJECTS -->
 
-    <section id="projects">
+    <!-- <section id="projects">
       <section class="title">
-        <h1> COMING SOON</h1>
+        <h1> PROJECTS.</h1>
       </section>
-    </section>
+    </section> -->
 
 
 <!--  CONTACT ME -->
+    <section class="contact">
+    <h1>Contact</h1>
+    <p> Hey guys, why not reach out?
+    <p> You can find on Github sharing my code and practising version control and contributing to other projects. You can also find me on the usual suspects (Twitter and Instagram) sharing my daily projects on instagram (365-day daily project where I am learning to code) and other bits and bobs.</p>
+    <section class=form-container>
+      <form id="form" method="POST" action="https://formspree.io/toyindawudu@gmail.com">
 
-    <!-- <section class="contact-me">
-      <p> Content Coming Soon
-    </section> -->
+        <div class="contact-info">
+
+          <label class="label"><span class="span">Your Name</span>
+            <br>
+          <input type="text" name="name" placeholder="If you could be so kind, write your name here"></label>
+            <br>
+          <label class="label"><span class="span">Your Email</span>
+            <br>
+          <input type="email" name="email" placeholder="I'll endeavour to get back to you as soon as I can!"></label>
+            <br>
+          <label class="label"><span class="span">Talk to me</span>
+            <br>
+          <textarea name="message" placeholder="How can I help?"></textarea></label>
+          <br>
+
+          <div class="button-holder">
+          <button type="submit">Submit</button>
+          </div>
+        </div>
+      </form>
+    </section>
+  </section>
+
+    </section>
 
   </body>
 </html>

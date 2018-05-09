@@ -42,6 +42,10 @@
   top: 150px;
   left: 150px;
   color:black;
+  -webkit-animation-duration: 6s;
+  -webkit-animation-delay: 4s;
+  -webkit-animation-iteration: 3;
+
 }
 
 .info p {
@@ -148,7 +152,7 @@
   width: 80%;
   padding: 20px;
   /* align-items: center; */
-  border: solid 1px green;
+  /* border: solid 1px green; */
   text-align: center;
   justify-content: space-between;
   margin: auto;
@@ -167,7 +171,7 @@
 }
 
 .skills-1-child, .skills-2-child, .skills-3-child {
-  border: solid black 1px;
+  /* border: solid black 1px; */
   padding: 30px;
   display: inline-block;
 }
@@ -192,13 +196,99 @@
   margin: auto;
 }
 
+/* Contact  */
 
+/* #page2 h1 {
+  width:80%;
+  margin:0px auto 15px;
+  padding-top: 30px;
+  padding: 0px auto;
+  text-align: center;
+  font-size: 2em;
+}
+
+#page2 p {
+  width:80%;
+  margin:30px auto;
+  line-height: 1.5em;
+} */
+
+.contact h1 {
+  padding-top: 30px;
+  font-size: 5em;
+  margin-left: 20px;
+}
+
+.contact p {
+  margin: 30px auto 0px;
+  width: 80%;
+  font-size: 1.2em;
+  /* border: black solid 1px; */
+  line-height: 1.6;
+}
+
+.form-container{
+  width:50%;
+  margin:50px auto;
+}
+
+.page-heading {
+  padding-top: 50px;
+  margin-left:30px;
+  font-size: 2em;
+}
+
+.contact-content{
+  margin: 10px auto;
+  width:80%;
+  letter-spacing:0.05em;
+}
+
+.contact-heading{
+  text-align: center;
+  font-size: 40px;
+
+}
+
+.label{
+  display: block;
+  margin-bottom:100px;
+}
+
+.span{
+  display:block;
+}
+
+.contact-info label{
+  width:48%;
+  margin:2%;
+}
+
+input, textarea{
+  width:550px;
+  height: 30px;
+  border: 0;
+  outline: 0;
+  background: transparent;
+  border-bottom: 1px solid black;
+}
+
+textarea{
+  background:lightgrey;
+  height:100px;
+}
+
+.button-holder{
+  text-align: center;
+  background: Transparent;
+  outline: none;
+  font-size: 30px;
+}
 
 /*Animations*/
 
-.fade-in {
+/* .fade-in {
   animation: fadeIn 2s;
-  animation:
 }
 
 @keyframes fadeIn {
@@ -210,4 +300,4 @@
   to {
     opacity: 1;
   }
-}
+} */
