@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
     <title>Toyin Dawudu | Front-end Developer & Creative</title>
-    <title></title>
+    <meta name="description" content="Freelance web developer &amp; photographer who builds websites and takes photos for clients in London.">
+    <!-- Bootstrap-->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
   </head>
   <body>
 
@@ -38,14 +40,15 @@
     <section id="services">
       <section class="title">
         <h1>Skills.</h1>
-          <section class="skills">
-            <section class="skills-1">
-              <section class ="skills-1-child">
-              <a class="icon"><img src="assests/frontenddevelopment.svg" width="128px" height="128px"></a>
-              <h2> Front-end Development</h2>
-              <p> I design aesthetically pleasing websites using technologies such as HTML(5), CSS(3) and JavaScript - and I enjoy coding. Building a responsive website is always my goal for every project and it’s interesting helping business owners create solution that helps their bottom-line.
-              </section>
+        <h4> This is how I can help your business</h4>
+        <section class="skills">
+          <section class="skills-1">
+            <section class ="skills-1-child">
+            <a class="icon"><img src="assests/frontenddevelopment.svg" width="128px" height="128px"></a>
+            <h2> Front-end Development</h2>
+            <p> I design aesthetically pleasing websites using technologies such as HTML(5), CSS(3) and JavaScript - and I enjoy coding. Building a responsive website is always my goal for every project and it’s interesting helping business owners create solution that helps their bottom-line.
             </section>
+          </section>
           <section class="skills-2">
             <section class="skills-2-child">
             <a class="icon"><img src="assests/digitalmarketing.svg" width="128px" height="128px"></a>
@@ -59,7 +62,7 @@
             <h2> Photography </h2>
             <p> I take pictures.
             </section>
-        </section>
+          </section>
         </section>
       </section>
     </section>
@@ -78,33 +81,32 @@
     <h1>Contact</h1>
     <p> Hey guys, why not reach out?
     <p> You can find on Github sharing my code and practising version control and contributing to other projects. You can also find me on the usual suspects (Twitter and Instagram) sharing my daily projects on instagram (365-day daily project where I am learning to code) and other bits and bobs.</p>
-    <section class=form-container>
-      <form id="form" method="POST" action="https://formspree.io/toyindawudu@gmail.com">
+      <section class=form-container>
+        <form id="form" method="POST" action="https://formspree.io/toyindawudu@gmail.com">
 
-        <div class="contact-info">
+          <div class="contact-info">
 
-          <label class="label"><span class="span">Your Name</span>
+            <label class="label"><span class="span">Your Name</span>
+              <br>
+            <input type="text" name="name" placeholder="If you could be so kind, write your name here"></label>
+              <br>
+            <label class="label"><span class="span">Your Email</span>
+              <br>
+            <input type="email" name="email" placeholder="I'll endeavour to get back to you as soon as I can!"></label>
+              <br>
+            <label class="label"><span class="span">Talk to me</span>
+              <br>
+            <textarea name="message" placeholder="How can I help?"></textarea></label>
             <br>
-          <input type="text" name="name" placeholder="If you could be so kind, write your name here"></label>
-            <br>
-          <label class="label"><span class="span">Your Email</span>
-            <br>
-          <input type="email" name="email" placeholder="I'll endeavour to get back to you as soon as I can!"></label>
-            <br>
-          <label class="label"><span class="span">Talk to me</span>
-            <br>
-          <textarea name="message" placeholder="How can I help?"></textarea></label>
-          <br>
-
-          <div class="button-holder">
-          <button type="submit">Submit</button>
+            <div class="button-holder">
+            <button type="submit">Submit</button>
+            </div>
           </div>
-        </div>
-      </form>
+        </form>
+      </section>
     </section>
-  </section>
-
-    </section>
-
-  </body>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    </body>
 </html>
