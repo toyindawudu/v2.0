@@ -9,14 +9,14 @@
 #landingpage {
   width:100vw;
   height: 100vh;
-  background-image: url(../img/1.jpg);
+  /* background-image: url(../img/1.jpg); */
   background-size: cover;
   background-repeat: no-repeat;
 }
 
 #landing::after {
   content: "";
-  background: url(image.jpg);
+  /* background: url(image.jpg); */
   opacity: 0.5;
   top: 0;
   left: 0;
@@ -25,11 +25,6 @@
   position: absolute;
   z-index: -1;
 }
-}
-
-.info h1, .info h3{
-
-}
 
 .info {
   font-size: 4em;
@@ -37,26 +32,17 @@
   line-height: 1.5;
   padding: 20px;
   margin: auto;
-  width: 60%;
-  position: absolute;
-  top: 150px;
-  left: 150px;
+  width: 70%;
+  text-align: center;
   color:black;
+  /* border: black solid 1px; */
   -webkit-animation-duration: 6s;
   -webkit-animation-delay: 4s;
   -webkit-animation-iteration: 3;
-
 }
 
 .info p {
-  font-size: .4em;
-}
-
-.info-1 {
-  text-transform: uppercase;
-}
-.info-2 {
-  font-size: .4em;
+  font-size: .6em;
 }
 
 .button {
@@ -98,6 +84,63 @@
   right: 0;
 }
 
+/* SECONDARY LANDING PAGE*/
+
+/* #landing {
+  display: grid;
+  grid-template-columns: repeat (6, 1fr);
+  grid-template-rows: repeat (6, 1fr)
+  border: solid black 1px;
+  height: 100vh;
+} */
+
+#landing {
+  height:100vh;
+  display: flex;
+  flex-direction: row;
+
+}
+
+#landing h1 {
+  font-size: 5em;
+}
+
+#landing h3 {
+  font-size: 3em;
+}
+
+#landing p {
+  font-size: 1.5em;
+}
+
+.col-1{
+  width:50%;
+  margin-left: 50px;
+}
+
+.col-2 {
+  width: 50%;
+}
+
+.one {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  grid-row-start: 3;
+  grid-row-end: 6;
+  z-index: 3;
+}
+
+.two {
+  grid-column-start: 2;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url(../img/2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  z-index: 2;
+}
+
 /* About Me*/
 
 #about-me {
@@ -106,7 +149,6 @@
   background-image: url(../img/2.jpg);
   background-size: cover;
   background-repeat: no-repeat;
-
 }
 
 .about-me-info {
@@ -118,17 +160,22 @@
 }
 .about-me-info h1 {
   font-size: 5em;
+  margin-bottom: 25px;
+}
+
+.about-me-info h3 {
+  padding:10px;
+  font-size: 2em;
 }
 
 .about-me-info p {
   font-size: 1.1em;
-  width:50%;
+  width:60%;
 }
 
 .about-me-info button {
   margin-top: 50px;
 }
-
 
 /* Services*/
 
@@ -149,13 +196,13 @@
   margin-left: 30px;
   display: flex;
   flex-direction: row;
-  width: 80%;
-  padding: 20px;
+  width: 70%;
+  padding: 25px;
   /* align-items: center; */
   /* border: solid 1px green; */
   text-align: center;
   justify-content: space-between;
-  margin: auto;
+  /* margin: auto; */
 
 }
 
@@ -177,41 +224,11 @@
 }
 
 .skills-1 p, .skills-2 p, .skills-3 p {
-  width: 300px;
-  font-size: 0.9em;
-}
-
-
-/* Projects */
-
-#projects {
-  width:100vw;
-  height: 80vh;
-  background-color: lightgrey;
-  /* padding-left: 50px; */
-}
-
-.title p {
-  display:block;
-  margin: auto;
+  width: 350px;
+  font-size: 1.2em;
 }
 
 /* Contact  */
-
-/* #page2 h1 {
-  width:80%;
-  margin:0px auto 15px;
-  padding-top: 30px;
-  padding: 0px auto;
-  text-align: center;
-  font-size: 2em;
-}
-
-#page2 p {
-  width:80%;
-  margin:30px auto;
-  line-height: 1.5em;
-} */
 
 .contact h1 {
   padding-top: 30px;
@@ -285,19 +302,18 @@ textarea{
   font-size: 30px;
 }
 
-/*Animations*/
+/* =================================
+  Media Queries
+==================================== */
 
-/* .fade-in {
-  animation: fadeIn 2s;
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  /*Layout*/
+  #landingpage, #about-me, #services, .contact {
+    width:100vw;
+    height: 100vh;
+  }
+
 }
-
-@keyframes fadeIn {
-  from {
-    opacity:0;
-
-  }
-
-  to {
-    opacity: 1;
-  }
-} */
