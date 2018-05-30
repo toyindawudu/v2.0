@@ -90,7 +90,7 @@ p {
 }
 
 /*==================================================
-=            SECTION A             =
+=            SECTION A (ABOUT ME PAGE)             =
 ==================================================*/
 
 #section-a {
@@ -109,17 +109,13 @@ p {
 }
 
 #section-a .content-wrap {
-  padding: 0 .5em;
+  padding: 1.5em;
   font-size: .85em;
 }
 
 /*==================================================
-=            SECTION B             =
+=            SECTION B (CONTACT PAGE)            =
 ==================================================*/
-
-#section-b {
-  padding: 1em .5em .5em;
-}
 
 label {
   display:flex;
@@ -127,9 +123,9 @@ label {
 }
 
 #section-b .content-wrap {
-  padding: 0 .5em;
+  padding: 0 2em 0 2em;
   font-size: .85em;
-  line-height: 1.5;
+  line-height: 1.2;
   background: #e0e0e0;
   box-shadow: 0 0 20px 0 rgba(82,94,116,0.7);
   text-align: center;
@@ -139,16 +135,16 @@ label {
   text-align: center;
 }
 
+#section-b h1 {
+  padding: 20px;
+  text-align: center;
+}
+
 form input, textarea {
   width: 85%;
 }
 
 /* FORM STYLES */
-
-/* #section-b .content-wrap {
-  display: grid;
-  grid-template-columns: 1fr;
-} */
 
 #section-b .content-wrap form {
   margin: 0;
@@ -174,24 +170,88 @@ form input, textarea {
 }
 
 /*==================================================
+=            FOOTER            =
+==================================================*/
+
+#main-footer{
+  text-align:center;
+}
+
+footer, footer a, footer div {
+  font-size: 1em;
+}
+
+footer a {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+ 
+}
+
+/*==================================================
 =            MEDIA QUERIES             =
 ==================================================*/
 
 /* LARGE SCREENS */
 @media (min-width: 700px) {
-  .grid {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-  }
 
   .content-wrap {
-    grid-column: 2/4;
+    height: 800px;
+  }
+
+  #wrapper{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+  }
+
+
+  /* Showcase - Landing Page */
+
+  #showcase {
+    grid-column:1/13;
   }
 
   #showcase h1 {
-    font-size: 3em;
-    text-align: center;
-}
+    font-size: 120px;
+    font-weight: 600;
+  }
+
+  #showcase p {
+    font-size: 48px;
+  }
+
+  /* Section A - About Me */
+
+  #section-a {
+    grid-column: 1/8;
+  }
+
+  #section-a h1 {
+    font-size: 64px;
+  }
+
+  #section-a h3 {
+    font-size: 48px;
+  }
+
+  #section-a p {
+    font-size: 20px;
+  }
 
 
+  /* Section B - Contact Page */
+
+  #section-b {
+    grid-column: 8/13;
+  }
+
+  #section-b h1 {
+    font-size: 64px;
+  }
+
+  #main-footer {
+    grid-column: 5/9;
+  }
 }
