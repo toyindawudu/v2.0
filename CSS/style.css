@@ -226,7 +226,7 @@ footer a {
 
 @media (min-width: 1025px) {
 
-  .content-wrap {
+  .article-container {
     display: flex;
     flex-direction: row;
   }
