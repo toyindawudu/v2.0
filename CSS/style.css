@@ -2,14 +2,17 @@
 =            CORE STYLES            =
 ==================================================*/
 
-*, body, html {
+* {
+  box-sizing: border-box;
+}
+
+body, html {
   margin: 0;
   padding: 0;
   font-family: 'PT Serif', serif;
   font-family: 'Oswald', sans-serif;
   line-height: 1.5;
   text-align: centre;
-  box-sizing: border-box;
 }
 
 img {
@@ -31,8 +34,12 @@ p {
 
 /* Custom Designs */
 
+.page-title {
+  padding: 10px;
+}
+
 .card {
-  padding: 50px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -68,16 +75,10 @@ p {
 
 #showcase h1 {
   font-size: 52px;
-  /* width: 100%; */
   text-transform: uppercase;
   padding-top: 100px;
   padding-bottom: 0;
   color:white;
-
-#showcase .content-wrap {
-  /* height: 650px; */
-  padding: 0 1.5em;
-  position:relative;
 }
 
 #showcase .content-wrap a {
@@ -98,7 +99,10 @@ p {
 ==================================================*/
 
 #section-a {
+  width: 90%;
+  margin: 10px auto;
   background: rgb(157, 170, 184);
+  border-radius: 5px;
   color: black;
   padding-bottom: 2em;
 }
@@ -107,7 +111,6 @@ p {
   padding: 0;
   text-align: center;
 }
-
 
 #section-a h1 {
   padding: 0;
@@ -126,7 +129,7 @@ p {
 }
 
 #section-a .content-wrap {
-  padding: 1.5em;
+  padding: .05em;
   font-size: .85em;
   text-align: center;
 }
@@ -134,7 +137,18 @@ p {
 /*==================================================
 =            SECTION B (PROJECTS)            =
 ==================================================*/
+#section-b {
+  width: 90%;
+  margin: 10px auto;
+  background: rgb(255 218 185);
+  border-radius: 10px;
+  color: black;
+  padding-bottom: 2em;
+}
 
+#section-b img {
+  max-width:calc;
+}
 
 /*==================================================
 =            MEDIA QUERIES             =
