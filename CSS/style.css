@@ -21,13 +21,13 @@ img {
   height: auto;
 }
 
-h1, h2, h3 {
+h1, h2, h3, {
   margin: 0;
   padding: 0.5em 1em;
 }
 
 p {
-  font-weight: 300;
+  /* font-weight: 300; */
   margin: 0;
   padding: 1em 1em;
 }
@@ -41,6 +41,9 @@ p {
 .card {
   padding: 10px;
   text-align: center;
+  height: 300px;
+  display: flex;
+  width: 100%;
 }
 
 #footer {
@@ -50,6 +53,140 @@ p {
   font-size: 16px;
   padding: 20px;
 }
+
+#wrapper a:link {
+  color: #ff0000;
+
+}
+
+#wrapper a:visited {
+  color:inherit;
+}
+
+#wrapper a:hover {
+  color: #ff00ff;
+}
+
+#wrapper a:active {
+  color: #0000ff;
+}
+
+.work-image {
+  height: 100%;
+  overflow: hidden;
+  margin: 5px;
+}
+
+/* Social links */
+
+/* .top-bar {
+  background: #000000;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  font-weight: 300;
+  font-size: 12px;
+  min-height: 40px;
+  line-height: 40px;
+} */
+
+/* .top-bar .social {
+  padding: 0px;
+} */
+
+.top-bar .social a i {
+  text-decoration: none;
+  margin: 0px;
+  line-height: 35px;
+  padding: 10px;
+  height: 40px;
+  width: 40px;
+  font-size: 16px;
+  color: #FFFFFF;
+}
+
+.top-bar .social a:hover i {
+  font-size: 16px;
+  color: #FF0000;
+}
+.social-icons{
+  width: 320px;
+  margin:0 auto;
+}
+.social-icons li {
+ list-style:none;
+ display:block;
+}
+
+ul{
+
+}
+
+/* a {
+  text-decoration: none;
+  color: #fff;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer-social-icons {
+  background: red;
+}
+
+.social-icon {
+  width: 200px;
+  margin: 0 auto;
+  color: #fff;
+  display: flex;
+  padding-left: 20px;
+}
+
+.social-icon a {
+  margin: 0 auto;
+  color: #fff;
+} */
+/*
+ul.social-icons {
+  margin-top: 10px;
+}
+.social-icons li {
+  vertical-align: top;
+  display: inline;
+  height: 100px;
+}
+.social-icons a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.fa-twitter {
+  padding:10px 12px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-twitter:hover {
+  background-color: #00aced;
+}
+
+.fa-instagram {
+  padding:10px 14px;
+  -o-transition:.5s;
+  -ms-transition:.5s;
+  -moz-transition:.5s;
+  -webkit-transition:.5s;
+  transition: .5s;
+  background-color: #322f30;
+}
+.fa-instagram:hover {
+  background-color: #0073a4;
+} */
 
 /*==================================================
 =            HEADER SHOWCASE             =
