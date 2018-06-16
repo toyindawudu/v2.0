@@ -1,0 +1,20 @@
+.card {
+  color: black;
+  width: 100%x;
+  background-size: cover;
+  border: solid 2px black;
+  display: flex;
+  flex-direction: column;
+}
+
+.card-image {
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.responsive {
+    width: 100%;
+    max-width: 250px;
+    height: auto;
+    margin: 0 auto;
+}
