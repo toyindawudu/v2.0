@@ -3,7 +3,7 @@
 /* @import url("components/avatar.css"); */
 /* @import url("components/button.css"); */
 /* @import url("components/dropdown.css"); */
-@import url("projects.css");
+@import url("card.css");
 /* @import url("components/banner.css"); */
 /* @import url("components/list.css"); */
 
@@ -307,8 +307,6 @@ ul.social-icons {
   background: green;
 }
 
-
-}
 
 /* Desktops and laptops ----------- */
 
