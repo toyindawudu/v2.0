@@ -1,11 +1,10 @@
-/* Components design */
-/* --- Components design --- */
-/* @import url("components/avatar.css"); */
-/* @import url("components/button.css"); */
-/* @import url("components/dropdown.css"); */
+
+/*==================================================
+=            COMPONENT DESIGN           =
+==================================================*/
+
+@import url("page-header.css");
 @import url("card.css");
-/* @import url("components/banner.css"); */
-/* @import url("components/list.css"); */
 
 /*==================================================
 =            CORE STYLES            =
@@ -18,16 +17,19 @@
 body, html {
   margin: 0;
   padding: 0;
-  font-family: 'PT Serif', serif;
+  font-family: 'Lato', sans-serif;
+  font-family: 'Dosis', sans-serif;
   font-family: 'Oswald', sans-serif;
+  font-family: 'PT Serif', serif;
+  font-family: 'Karla', sans-serif;
   line-height: 1.5;
   text-align: centre;
 }
 
 img {
   display: block;
-  width: 100%;
-  height: auto;
+  max-width: 410px;
+  max-height: 600px;
 }
 
 h1, h2, h3, {
@@ -36,24 +38,15 @@ h1, h2, h3, {
 }
 
 p {
-  /* font-weight: 300; */
   margin: 0;
   padding: 1em 1em;
+  font-family: 'Karla';
 }
 
 /* Custom Designs */
 
 .page-title {
   padding: 10px;
-}
-
-.card {
-  padding: 10px;
-  text-align: center;
-  /* height: 300px; */
-  display: flex;
-  flex-direction: column;
-  width: 100%;
 }
 
 #footer {
@@ -87,124 +80,13 @@ p {
   margin: 5px;
 }
 
-/* Social links */
-
-/* .top-bar {
-  background: #000000;
-  padding-top: 0px;
-  padding-bottom: 0px;
-  font-weight: 300;
-  font-size: 12px;
-  min-height: 40px;
-  line-height: 40px;
-} */
-
-/* .top-bar .social {
-  padding: 0px;
-} */
-
-.top-bar .social a i {
-  text-decoration: none;
-  margin: 0px;
-  line-height: 35px;
-  padding: 10px;
-  height: 40px;
-  width: 40px;
-  font-size: 16px;
-  color: #FFFFFF;
-}
-
-.top-bar .social a:hover i {
-  font-size: 16px;
-  color: #FF0000;
-}
-.social-icons{
-  width: 320px;
-  margin:0 auto;
-}
-.social-icons li {
- list-style:none;
- display:block;
-}
-
-ul {
-
-}
-
-/* a {
-  text-decoration: none;
-  color: #fff;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.footer-social-icons {
-  background: red;
-}
-
-.social-icon {
-  width: 200px;
-  margin: 0 auto;
-  color: #fff;
-  display: flex;
-  padding-left: 20px;
-}
-
-.social-icon a {
-  margin: 0 auto;
-  color: #fff;
-} */
-/*
-ul.social-icons {
-  margin-top: 10px;
-}
-.social-icons li {
-  vertical-align: top;
-  display: inline;
-  height: 100px;
-}
-.social-icons a {
-  color: #fff;
-  text-decoration: none;
-}
-
-.fa-twitter {
-  padding:10px 12px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: #322f30;
-}
-.fa-twitter:hover {
-  background-color: #00aced;
-}
-
-.fa-instagram {
-  padding:10px 14px;
-  -o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition: .5s;
-  background-color: #322f30;
-}
-.fa-instagram:hover {
-  background-color: #0073a4;
-} */
-
 /*==================================================
 =            HEADER SHOWCASE             =
 ==================================================*/
 
 #showcase {
   min-height: 650px;
-  color: #f4f3f3;
+  color:black;
   text-align: center;
 }
 
@@ -218,7 +100,7 @@ ul.social-icons {
   width: 100%;
   height: 650px;
   z-index: -1;
-  opacity: 0.7;
+  opacity: 0.4;
 }
 
 #showcase h1 {
@@ -226,7 +108,6 @@ ul.social-icons {
   text-transform: uppercase;
   padding-top: 100px;
   padding-bottom: 0;
-  color:white;
 }
 
 #showcase .content-wrap a {
@@ -239,15 +120,15 @@ ul.social-icons {
 #showcase .content-wrap p {
   font-size: 32px;
   padding: 0;
-  color: lightgrey;
 }
+
 
 /*==================================================
 =            SECTION A (ABOUT ME PAGE)             =
 ==================================================*/
 
 #section-a {
-  width: 90%;
+  /* width: 90%; */
   margin: 10px auto;
   background: rgb(157, 170, 184);
   border-radius: 5px;
@@ -273,7 +154,7 @@ ul.social-icons {
 }
 
 #section-a p {
-  font-size: 1.4em;
+  font-size: 16px;
 }
 
 #section-a .content-wrap {
@@ -294,29 +175,63 @@ ul.social-icons {
   padding-bottom: 2em;
 }
 
-#section-b img {
-
-}
-
 /*==================================================
 =            MEDIA QUERIES             =
 ==================================================*/
 
 /* LARGE SCREENS */
 @media (min-width: 768px) {
-  background: green;
+
+  #section-a {
+    height: 150vh;
+    display:flex;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+  }
+
+  .article-container {
+    width:100%;
+    display:flex;
+    align-content: flex-start;
+  }
+
+  .article-1, .article-2 {
+    width:50%;
+  }
+
+
+  .card {
+    color: black;
+    width: 700px;
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;;
+    flex-wrap: wrap;
+  }
+  
+  .card-image {
+      max-width: 320px;
+      margin: 0 auto;
+      border: solid 1px;
+  }
+  
+  .card-content {
+      width: 400px;
+  }
+  
+  .responsive {
+      width: 100%;
+      height: auto;
+      margin: 0 auto;
+  }  
 }
 
 
 /* Desktops and laptops ----------- */
 
 @media (min-width: 1025px) {
-
-  .article-container {
-    display: flex;
-    flex-direction: row;
-  }
-
+  /* Styles here */
 }
 
 /* Desktops and laptops ----------- */
