@@ -5,6 +5,7 @@
 
 @import url("page-header.css");
 @import url("card.css");
+@import url("project.css");
 
 /*==================================================
 =            CORE STYLES            =
@@ -130,7 +131,7 @@ p {
 #section-a {
   /* width: 90%; */
   margin: 10px auto;
-  background: rgb(157, 170, 184);
+  /* background: rgb(157, 170, 184); */
   border-radius: 5px;
   color: black;
   padding-bottom: 2em;
@@ -167,7 +168,6 @@ p {
 =            SECTION B (PROJECTS)            =
 ==================================================*/
 #section-b {
-  width: 90%;
   margin: 10px auto;
   background: rgb(255 218 185);
   border-radius: 10px;
@@ -183,10 +183,10 @@ p {
 @media (min-width: 768px) {
 
   #section-a {
-    height: 150vh;
-    display:flex;
+    height: 100vh;
+    /* display:flex; */
     /* flex-direction: column; */
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
   }
 
   .article-container {
@@ -198,7 +198,6 @@ p {
   .article-1, .article-2 {
     width:50%;
   }
-
 
   .card {
     color: black;
@@ -217,7 +216,7 @@ p {
   }
   
   .card-content {
-      width: 400px;
+      width: 450px;
   }
   
   .responsive {
@@ -231,7 +230,30 @@ p {
 /* Desktops and laptops ----------- */
 
 @media (min-width: 1025px) {
-  /* Styles here */
+
+  .card {
+    color: black;
+    width: 900px;
+    min-height: 500px;
+    background-size: cover;
+    display: flex;
+    align-items: center;;
+    flex-wrap: wrap;
+  }
+  
+  .card-image {
+      max-width: 320px;
+      margin: 0 auto;
+      border: solid 1px green;
+  }
+  .card-content {
+    width: 650px;
+    border: solid 2px red;
+}
+
+  .projects {
+    width: 500px;
+  }
 }
 
 /* Desktops and laptops ----------- */
