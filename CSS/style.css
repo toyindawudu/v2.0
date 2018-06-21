@@ -6,6 +6,7 @@
 @import url("page-header.css");
 @import url("card.css");
 @import url("project.css");
+@import url("socialbar.css");
 
 /*==================================================
 =            CORE STYLES            =
@@ -58,20 +59,19 @@ p {
   padding: 20px;
 }
 
-#wrapper a:link {
+#footer a:link {
   color: #ff0000;
-
 }
 
-#wrapper a:visited {
+#footer a:visited {
   color:inherit;
 }
 
-#wrapper a:hover {
+#footer a:hover {
   color: #ff00ff;
 }
 
-#wrapper a:active {
+#footer a:active {
   color: #0000ff;
 }
 
@@ -102,6 +102,7 @@ p {
   height: 650px;
   z-index: -1;
   opacity: 0.4;
+  margin-top: -40px;
 }
 
 #showcase h1 {
@@ -111,18 +112,10 @@ p {
   padding-bottom: 0;
 }
 
-#showcase .content-wrap a {
-  position: absolute;
-  bottom: 10;
-  left: 50%;
-  margin-left: -60px;
-}
-
 #showcase .content-wrap p {
   font-size: 32px;
   padding: 0;
 }
-
 
 /*==================================================
 =            SECTION A (ABOUT ME PAGE)             =
@@ -138,7 +131,6 @@ p {
 }
 
 #section-a h1, h2, h3 {
-  padding: 0;
   text-align: center;
 }
 
@@ -146,6 +138,9 @@ p {
   padding: 0;
   text-align: center;
   font-size: 36px;
+  width: 320px;
+  text-align: center;
+  border: solid 1px black;
 }
 
 #section-a h3 {
