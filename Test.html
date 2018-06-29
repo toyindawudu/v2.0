@@ -4,13 +4,13 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/normalise.css">
-        <link rel="stylesheet" type="text/css" href="css/socialbar.css">
+        <link rel="stylesheet" type="text/css" href="css/nav.css">
         <!-- <link rel="stylesheet" type="text/css" href="css/style.css"> -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
         <!-- <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" > -->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-        <link href="css/bootstrap-theme.min.css" rel="stylesheet" type="text/css" >
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     
         <link href="https://fonts.googleapis.com/css?family=PT+Serif" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
@@ -21,14 +21,32 @@
 </head>
 
 <body>
-    <div class="social">
-        <ul class="social-icons animated bounceInDown">
-        <a href="http://twitter.com/toyindawudu"><i class="fa fa-twitter-square" style="font-size:40px"></i></i></a> 
-        <a href="http://twitter.com/toyindawudu"><i class="fa fa-instagram" style="font-size:40px"></i></i></a> 
-        <a href="http://twitter.com/toyindawudu"><i class="fa fa-camera" style="font-size:40px"></i></i></a> 
-        </ul>
-    </div>
-    
-         
+    <header>
+        <div class="menu-toggle visible-xs">
+            <span class="menu-closed">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </span>
+            <span class="menu-opened">
+                <i class="glyphicon glyphicon-remove"></i>
+            </span>
+        </div>
+        <div class="container">
+            <img src="assests/logo.png" alt="logo" width="80px"> 
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Photography</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script src="js/nav-script.js"></script>
 </body>
 </html>

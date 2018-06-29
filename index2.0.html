@@ -19,9 +19,30 @@
     <meta name="description" content="Freelance web developer &amp; photographer who builds websites and takes photos for clients in London.">
   </head>
   <body>
-  <div id="wrapper">
+
+    <header>
+        <div class="menu-toggle visible-xs">
+            <span class="menu-closed">
+                <i class="glyphicon glyphicon-menu-hamburger"></i>
+            </span>
+            <span class="menu-opened">
+                <i class="glyphicon glyphicon-remove"></i>
+            </span>
+        </div>
+        <div class="container">
+            <img src="assests/logo.png" alt="logo" width="80px"> 
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Projects</a></li>
+                    <li><a href="#">Photography</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
     <!--  Header Showcase -->
-    <header id="showcase">
+    <div id="showcase">
       <div class="bg-image"></div>
       <div class="content-wrap">
         <h1 class="animated bounceInDown">Toyin Dawudu</h1>
@@ -35,7 +56,7 @@
           </div>
         </div>     
       </div>
-    </header>
+    </div>
 
     <!-- Main Section -->
     <!-- Section A (ABOUT ME) -->
@@ -136,18 +157,6 @@
                 </div>
             </div>
             <hr>
-            <div class="project">
-                <div class="project-3">
-                    <div class="overlay">
-                        <a href="">View Project</a>
-                    </div>   
-                </div>
-
-                <div class="project-summary">
-                    <h3>Project Title</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam error ratione laudantium animi asperiores excepturi ex dolores nostrum! Iste, ratione!</p>
-                </div>
-            </div>
           </div>  
       </div>
     </section>
@@ -157,9 +166,13 @@
       <div> &amp;copy 
         <a href="#"> Toyin Dawudu</a> 2018
       </div>
-
-      
     </footer>
-  </div> 
+ 
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src="js/nav-script.js"></script>
   </body>
 </html>
